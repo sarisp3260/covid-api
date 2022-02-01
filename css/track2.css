@@ -62,9 +62,61 @@
  }
 .menu li i{
     font-size: 1.2rem;
-    
 }
-
+.second_section h4{
+    margin-top: 5%;
+}
+.main_datos{
+    width: 100%;
+    margin-top: 7%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.case{
+    height: 8.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.case p{
+   padding-top: 10%;
+   font-weight: 900;
+   font-size: 1.2rem;
+   margin-block-end: 0;
+  }
+.case h6{
+    padding-top: 5%;
+    color: #242164;
+    font-weight: 900;
+    font-size: 0.8rem;
+    margin-left: 5%;
+ }
+.total_case{
+    background-color: #FFF2F2;
+   }
+.total_case p{
+    color: #FF0100;
+}
+.active_case{
+    background-color: #FFF9F1;
+}
+.active_case p{
+   color: #FF6A07;
+}
+.recovered_case{
+    background-color: #EDFFEC;
+}
+.recovered_case p{
+    color: #82C519;
+}
+.death_case{
+    background-color: #EEFBFF;
+}
+.death_case p{
+    color: #373AAE;
+}
 
 
 
