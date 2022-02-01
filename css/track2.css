@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ /*Reseteo*/
+ *{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin:0;
+    border:0;
+    padding:0;
+    list-style:none;
+    box-sizing: border-box;
+    }
+
+ html{
+    height: 100vh;
+    width: 100% !important; 
+    }
+   
+.main{
+    width: 100% !important; 
+    margin: 0%;
+ }   
+
+.main_nav{
+     height: 100vh;
+     margin: 0%;
+     background-color: #F7F8FC;
+     border-right: 2px solid #e7e8ec88;
+}
+
+.picture{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+    padding-left: 0%;
+ }
+ .menu li {
+   width: 55%;
+   height: 12%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   color: #3639AE;
+}
+.menu li:hover {
+    background-color: #3639AE;
+    color: white;
+ }
+.menu li i{
+    font-size: 1.2rem;
+    
+}
+
+
+
+
