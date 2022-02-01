@@ -1,23 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root
+{
+    --blue: #3639AE;
+    --bluedarker: #171133;
+    --oxfordblue: #1B2A4E;
+    --navyblue: #1E0F9F;
+    --bluelight: #08B8E3;
+    --mediumblue: #293f73;
+    --textdark: #6F6B8C;
+    --textlight: #fff;
+}
 
 *
 {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
 header
 {
+    position: fixed;
+    top: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 0 60px;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--textlight);
+    z-index: 1;
 }
-
+.logo
+{
+    height: 40%;
+}
 .nav-bar
 {
-    background-color: blueviolet;
     width: 50%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+.nav-bar a
+{
+    color: var(--textdark);
+}
+.tracker
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: var(--textlight )!important ;
+}
+.container-first
+{
+    height: 100vh;
+    background: linear-gradient(180deg, var(--bluelight) , var(--mediumblue) ); 
+    display: flex;
+    justify-content: center;
+}
+.first
+{
+    display: grid;
+    align-items: center;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+}
+.text-first
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-first h1
+{
+    font-size: 3.5rem;
+    color: var(--textlight);
+    margin-bottom: 20px;
+}
+.text-first p
+{
+    font-size: 1.1rem;
+    color: var(--textlight);
+    margin-bottom: 20px;
+}
+.text-first .first-btn
+{
+    background-color: var(--navyblue);
+    color: var(--textlight);
+    border: 3px solid var(--blue);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+.first picture
+{
+    display: flex;
+    justify-content: center;
+}
+.container-brands
+{
+    position: relative;
+    width: 100%;
+    top: -3rem;
+}
+.brand-flex
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.brand
+{
+    background-color: var(--textlight);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+.brand img{
+    width: 70%;
+}
+
