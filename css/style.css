@@ -4,4 +4,20 @@
 *
 {
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.nav-bar
+{
+    background-color: blueviolet;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
