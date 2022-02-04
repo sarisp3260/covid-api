@@ -16,15 +16,15 @@
     <title>Music</title>
 </head>
 <body>
-    <div class="main row"> 
+    <div class="main"> 
         <nav class="main_nav">
             <div class="picture">
-                <img src="./img/favicon.png" width="50px">
+                <img src="./img/coronavirus.png" width="50px">
             </div>
                     
             <ul class="menu">
                 <li><i class="fas fa-chart-pie"></i></li>
-                <li><i class="fas fa-bars"></i></li>
+                <li><a href="tracker3.html"></a><i class="fas fa-bars"></i></li>
                 <li><i class="fas fa-th-large"></i></li>
                 <li><i class="far fa-folder"></i></li>
                 <li><i class="far fa-clone"></i></li>
@@ -35,7 +35,7 @@
             </ul>
 
         </nav>
-        <section class="second_section col-3 col-md-3">
+        <section class="second_section">
             <h1>COVID-19 Tracker</h1>
             <article class="main_datos">
                 <div class="case total_case">
@@ -60,91 +60,121 @@
                 </div>
            </article>
         </section>
-        <section class="main_body col-5 col-md-8">
+        <section class="main_body">
             <div class="input">
-                <select class="form-select"  >
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select class="form-select" id="form" >
+                  
                 </select>
                 <div class="update ">
                     <p> Update</p>
                 </div>
                
             </div>
-            <section class="sect_map col-md-12">
+            <section class="sect_map">
                     <div class="card_sect col-md-6">
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-defult.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">Total Cases</li>
-                            <li class="list-group-item">14256377</li>
+                            <li class="list-group-item tote totle"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-red.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">Total Deaths</li>
-                            <li class="list-group-item">17289938</li>
+                            <li class="list-group-item tote sec"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-green.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">Total Recovered</li>
-                            <li class="list-group-item">376748849</li>
+                            <li class="list-group-item tote third"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-blue.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">Total Active</li>
-                            <li class="list-group-item">34556677</li>
+                            <li class="list-group-item tote fourth"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-orange.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">New Cases</li>
-                            <li class="list-group-item">2345678887</li>
+                            <li class="list-group-item tote fifth"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 12rem;">
+                        <div class="card one">
+                            <div class="anim">
+                                <img src="./img/covid-redark.svg">
+                            </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">New Deaths</li>
-                            <li class="list-group-item">3456476878</li>
+                            <li class="list-group-item tote sixth"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="map col-md-6">
-                        <img src="./img/mapa.png" width="410px">
+                        <img src="./img/mapa.png" width="400px">
                     </div>
             </section>
-                   <div class="footer_card col-md-12">
-                       <div class="card" style="width: 10rem;">
-                              <ul class="list-group list-group-flush">
-                                <li>Total cases</li>
-                                <li>15627828</li>
+                   <div class="footer_card">
+                       <div class="card maincard cardone">
+                        <div class="anim_two">
+                            <img src="./img/covid-defult.svg">
+                        </div>
+                        <ul class="list-group-two">
+                            <li><p>Total Confirmed</p></li>
+                            <li class="foot_card1"></li>
+                        </ul>
+                        </div>
+                        <div class="card maincard cardtwo">
+                            <div class="anim_two">
+                                <img src="./img/covid-green.svg">
+                            </div>
+                            <ul class="list-group-two">
+                                <li><p>Total Recovered</p></li>
+                                <li class="foot_card2"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 10rem;">
-                            <ul class="list-group list-group-flush">
-                                <li>An item</li>
-                                <li>A second item</li>
+                        <div class="card maincard cardthree">
+                            <div class="anim_two">
+                                <img src="./img/covid-red.svg">
+                            </div>
+                            <ul class="list-group-two">
+                                <li><p>Total Deaths</p></li>
+                                <li class="foot_card3"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 10rem;">
-                            <ul class="list-group list-group-flush">
-                                <li>An item</li>
-                                <li>A second item</li>
+                        <div class="card maincard">
+                            <div class="anim_two">
+                                <img src="./img/covid-redark.svg">
+                            </div>
+                            <ul class="list-group-two">
+                                <li><p>New Deaths</p></li>
+                                <li class="foot_card4"></li>
                             </ul>
                         </div>
-                        <div class="card" style="width: 10rem;">
-                            <ul class="list-group list-group-flush">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                </ul>
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <ul class="list-group list-group-flush">
-                            <li>An item</li>
-                            <li>A second item</li>
+                        <div class="card maincard">
+                            <div class="anim_two">
+                                <img src="./img/telephone.svg">
+                            </div>
+                            <ul class="list-group-two">
+                                <li><p>Help Line No.</p></li>
+                                <li class="foot_card5">198</li>
                             </ul>
                         </div>
                     
