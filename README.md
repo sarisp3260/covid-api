@@ -7,7 +7,7 @@ Por esta razón hemos creado una aplicación que muestra en tiempo real el núme
 
 ## Home
 
-[![HOME](HOME "HOME")](https://github.com/sarisp3260/covid-api/blob/dev/project_img/home1.png "HOME")
+![](https://drive.google.com/drive/folders/1qn8sqSmj-nLMh6rKfAzH6Td12v07mnOd)
 Muestra el menú de navegación a las diferentes secciones donde podemos encontrar información especifica y detallada de los casos, recuperaciones y muertes por causa del covid-19, además cuenta con una aplicación para descargar, teniendo acceso a diferentes tipos de dispositivos donde podemos se puede apreciar por medio de distintas plataformas
 
 ## TRACK
