@@ -7,17 +7,17 @@ Por esta razón hemos creado una aplicación que muestra en tiempo real el núme
 
 ## Home
 
-[![HOME](HOME "HOME")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/home1.jpg "HOME")
+[![HOME](HOME "HOME")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/home1.png "HOME")
 Muestra el menú de navegación a las diferentes secciones donde podemos encontrar información especifica y detallada de los casos, recuperaciones y muertes por causa del covid-19, además cuenta con una aplicación para descargar, teniendo acceso a diferentes tipos de dispositivos donde podemos se puede apreciar por medio de distintas plataformas
 
 ## TRACK
 
-[![TRACK](TRACK "TRACK")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/track.jpg "TRACK")
+[![TRACK](TRACK "TRACK")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/track.png "TRACK")
 Se muestra el total de casos, los casos activos, los casos recuperados y las muertes a nivel mundial, además se muestra un top 10 de los países con más casos
 
 ## TRACK-TABLE
 
-[![TRACK-TABLE](TRACK-TABLE "TRACK-TABLE")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/track-table.jpg "TRACK-TABLE")
+[![TRACK-TABLE](TRACK-TABLE "TRACK-TABLE")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/track-table.png "TRACK-TABLE")
 Vista en tabla de casos, los casos activos, los casos recuperados y las muertes a nivel mundial, además muestra una vista en tabla del top 10 de los países con más casos.
 
 ## Construido con
