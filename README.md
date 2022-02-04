@@ -12,7 +12,7 @@ Muestra el menú de navegación a las diferentes secciones donde podemos encontr
 
 ## TRACK
 
-[![TRACK](TRACK "TRACK")](http://github.com/sarisp3260/covid-api/blob/dev/project_img/track.png "TRACK")
+[![TRACK](TRACK "TRACK")](http://https://github.com/sarisp3260/covid-api/blob/dev/project_img/track.png "TRACK")
 Se muestra el total de casos, los casos activos, los casos recuperados y las muertes a nivel mundial, además se muestra un top 10 de los países con más casos
 
 ## TRACK-TABLE
