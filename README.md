@@ -12,7 +12,8 @@ Muestra el menú de navegación a las diferentes secciones donde podemos encontr
 
 ## TRACK
 
-<img src="img/blog-1.jpg" alt="blog1-image" />
+<img src="img/blog-1.jpg" alt="blog1-image" width="200px" />
+
 Se muestra el total de casos, los casos activos, los casos recuperados y las muertes a nivel mundial, además se muestra un top 10 de los países con más casos
 
 ## TRACK-TABLE
