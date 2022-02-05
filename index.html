@@ -1,193 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covimap</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="img/coronavirus.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <main class="colunm">
-        <header class="col-12 col-md-12 ">
-            <img src="img/logo.png" alt="logo" class="logo">
-            <nav class="nav-bar">
-                <a href="">Home</a>
-                <a href="">Prevention</a>
-                <a href="">Curantine</a>
-                <a href="">Pages</a>
-                <a href="">About</a>
-                <a href="">Help</a>
-                <a href="" class="tracker">Tracker</a>
-            </nav>
-        </header>
-
-        <section class="container-first">
-            <div class="first">
-                <article class="text-first">
-                    <h1>Download the covid app for get latest update</h1>
-                    <p>Human coronaviruses are common and are typically associated with mild illnesses, similar to the common cold.The corona virus COVID-19 is affecting 210 countries & territories around the world and 2 international conveyances.</p>
-                    <a href="#" class="first-btn">HOW TO PROTECT</a>
-                </article>
-                <picture>
-                    <img src="img/phones.png" alt="">
-                </picture>
+      <header class="navbar fixed-top navbar-expand-lg navbar-light">
+        <!--  bg-light -->
+        <nav class="container">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="img/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav d-grid gap-3 mb-lg-0 col-12 d-flex justify-content-end"
+              >
+                <!-- -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Home 1</a></li>
+                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prevention</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quarentine</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Pages 1</a></li>
+                    <li><a class="dropdown-item" href="#">Pages 2</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Help</a>
+                </li>
+                <li>
+                  <button class="btn btn-outline-success tracker" type="submit">
+                    <a href="traker2.html">Tracker</a>
+                  </button>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </nav>
+      </header>
 
-        <section class="container-brands">
-            <div class="brand-flex">
-                <div class="brand">
-                    <img src="img/b-2.png" alt="">
-                </div>
-                <div class="brand">
-                    <img src="img/b-3.png" alt="">
-                </div>
-                <div class="brand">
-                    <img src="img/b-4.png" alt="">
-                </div>
-                <div class="brand">
-                    <img src="img/b-5.png" alt="">
-                </div>
-                <div class="brand">
-                    <img src="img/b-6.png" alt="">
-                </div>
-                <div class="brand">
-                    <img src="img/b-2.png" alt="">
-                </div>
-            </div>
-        </section>
+      <section class="container-first col-12 col-md-12">
+        <div class="first col-10">
+          <article class="text-first col-10 col-sm-10 col-md-10 col-lg-6">
+            <h1>Download the covid app for get latest update</h1>
+            <p>
+              Human coronaviruses are common and are typically associated with
+              mild illnesses, similar to the common cold.The corona virus
+              COVID-19 is affecting 210 countries & territories around the world
+              and 2 international conveyances.
+            </p>
+            <a href="#" class="first-btn">HOW TO PROTECT</a>
+          </article>
+          <picture class="col-10 col-sm-10 col-md-10 col-lg-6 py-5">
+            <img src="img/phones.png" class="img-fluid" alt="" />
+          </picture>
+        </div>
+      </section>
 
-        <section class="container-cards">
+      <section class="container-brands col-12">
+        <div
+          class="brand-flex justify-content-center col-8 col-sm-8 col-md-8 col-lg-10"
+        >
+          <div class="brand">
+            <img src="img/b-2.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/b-3.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/b-4.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/b-5.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/b-6.png" alt="" />
+          </div>
+          <div class="brand">
+            <img src="img/b-2.png" alt="" />
+          </div>
+        </div>
+      </section>
 
-            <p></p>
-            <h2></h2>
-
-            <div class="container-boxes">
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Cough</h3>
-                    <p>Coughing is another key symptom, but it's not just any cough, said Schaffner. It should be a dry cough that you feel in your chest.</p>
-                </div>
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Difficulty Breathing</h3>
-                    <p>Shortness of breath can be a third -- and very serious -- manifestation of Covid-19, and it can occur on its own, without a cough. </p>
-                </div>
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Fever</h3>
-                    <p>Fever is a key symptom, experts say. Don't fixate on a number, but know it's really not a fever until your temperature reaches at least 100</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="">
-                <article class="">
-                    <h1>Stay Home, And Prayer For Victim</h1>
-                    <p>Human coronaviruses are common and are typically associated with mild illnesses, similar to the common cold. <br>
-
-                    Shortness of breath can be a third -- and very serious -- manifestation of Covid-19, and it can occur on its own, without a cough.</p>
-                    <a href="#" class="">DOWNLOAD NOW</a>
-                </article>
-                <picture>
-                    <img src="img/mobiles.png" alt="">
-                </picture>
-            </div>
-        </section>
-
-        <section>
-            <div class="info">
-                <div class="info-box">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <p>q</p>
-            <h2></h2>
-            <div class="list">
-                <div class="item-list">
-                    <h3>01. Unique and bold website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="item-list">
-                    <h3>02. We're are ready to start now</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="item-list">
-                    <h3>03. We deliver the highest quality design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="item-list">
-                    <h3>04. We deliver the highest quality design </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-        </section>
-        
-
-        <!--SECCIÖN EMMANUEL Get the simple app for latest news-->
-        <section>
-            <div class="">
-                <article class="">
-                    <h1>Get the simple app for latest news</h1>
-                    <p>Human coronaviruses are common and are typically associated with mild illnesses, similar to the common cold.</p>
-                    <a href="#" class="">DOWNLOAD NOW</a>
-                </article>
-                <picture>
-                    <img src="img/phone-1.png" alt="">
-                </picture>
-            </div>
-        </section>
-
-        <section>
-            <div class="container-last">
-                <div class="item">
-                    <img src="" alt="">
-                    <div class="span-item">
-                        <span></span>
-                        <span></span>
+      <section class="container carousel col-lg-12">
+        <div class="row textCarousel col-lg-12">
+          <div class="center col-lg-8">
+            <p>App Feature</p>
+            <h2>Basic Feature You Will Get When You Use</h2>
+          </div>
+        </div>
+        <article class="row">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row" id="row-carousel">
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconPink">
+                        <i class="bi bi-sliders2-vertical"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Cough</h2>
+                        <p>
+                          Coughing is another key symptom, but it's not just any
+                          cough, said Schaffner. It should be a dry cough that
+                          you feel in your chest.
+                        </p>
+                      </div>
                     </div>
-                    <h2></h2>
-                    <a href=""></a>
-                </div>
-                <div class="item">
-                    <img src="" alt="">
-                    <div class="span-item">
-                        <span></span>
-                        <span></span>
+                  </div>
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconYellow">
+                        <i class="bi bi-box-seam"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Difficulty Breathing</h2>
+                        <p>
+                          Shortness of breath can be a third -- and very serious
+                          -- manifestation of Covid-19, and it can occur on its
+                          own, without a cough.
+                        </p>
+                      </div>
                     </div>
-                    <h2></h2>
-                    <a href=""></a>
-                </div>
-                <div class="item">
-                    <img src="" alt="">
-                    <div class="span-item">
-                        <span></span>
-                        <span></span>
+                  </div>
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconBlue">
+                        <i class="bi bi-lock-fill"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Fever</h2>
+                        <p>
+                          Fever is a key symptom, experts say. Don't fixate on a
+                          number, but know it's really not a fever until your
+                          temperature reaches at least 100
+                        </p>
+                      </div>
                     </div>
-                    <h2></h2>
-                    <a href=""></a>
+                  </div>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconYellow">
+                        <i class="bi bi-sliders2-vertical"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Cough</h2>
+                        <p>
+                          Coughing is another key symptom, but it's not just any
+                          cough, said Schaffner. It should be a dry cough that
+                          you feel in your chest.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconBlue">
+                        <i class="bi bi-box-seam"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Difficulty Breathing</h2>
+                        <p>
+                          Shortness of breath can be a third -- and very serious
+                          -- manifestation of Covid-19, and it can occur on its
+                          own, without a cough.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" id="row-box">
+                    <div class="single-box">
+                      <div class="img-area" id="iconPink">
+                        <i class="bi bi-lock-fill"></i>
+                      </div>
+                      <div class="text-area">
+                        <h2>Fever</h2>
+                        <p>
+                          Fever is a key symptom, experts say. Don't fixate on a
+                          number, but know it's really not a fever until your
+                          temperature reaches at least 100
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </article>
+      </section>
 
-        <footer>
+      <section class="stayHome col-12">
+        <div class="staySection col-10">
+          <picture class="col-10 col-sm-10 col-md-10 col-lg-5 py-5">
+            <img src="img/mobiles.png" class="img-fluid" alt="" />
+          </picture>
+          <article class="text-first col-10 col-sm-10 col-md-10 col-lg-5">
+            <h1>Stay Home, And Prayer For Victim</h1>
+            <p>
+              Human coronaviruses are common and are typically associated with
+              mild illnesses, similar to the common cold. <br />
 
-        </footer>
+              Shortness of breath can be a third -- and very serious --
+              manifestation of Covid-19, and it can occur on its own, without a
+              cough.
+            </p>
+            <a href="#" class="stay-btn">DOWNLOAD NOW</a>
+          </article>
+        </div>
+      </section>
 
+      <section class="container infoDownload col-12">
+        <div class="info col-10 col-sm-9 col-lg-9">
+          <div class="info-box">
+            <i class="bi bi-lock-fill"></i>
+            <h2>403</h2>
+            <p>STARTUPS</p>
+          </div>
+          <div class="info-box">
+            <i class="bi bi-upload"></i>
+            <h2>120+</h2>
+            <p>MEMBER</p>
+          </div>
+          <div class="info-box">
+            <i class="bi bi-boombox-fill"></i>
+            <h2>22M</h2>
+            <p>REVENUE</p>
+          </div>
+          <div class="info-box">
+            <i class="bi bi-heart-fill"></i>
+            <h2>5643</h2>
+            <p>DOWNLOAD</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container askQuestion col-12">
+        <article class="row question col-12 col-md-10">
+          <div class="textQuestion col-lg-8">
+            <p>faqs</p>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="row list">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    01. Unique and bold website
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    02. We're are ready to start now
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    03. We deliver the highest quality design
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    04. We deliver the highest quality design
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!--SECCIÖN EMMANUEL Get the simple app for latest news-->
+      <section class="col-12 col-md-12 section--get-app">
+        <div class="row section--margin">
+          <div class="col-md-8">
+            <article class="container">
+              <h1 class="font-weight-bold">
+                Get the simple app for latest news
+              </h1>
+              <p>
+                Human coronaviruses are common and are typically associated with
+                mild illnesses, similar to the common cold.
+              </p>
+              <a href="#">DOWNLOAD NOW</a>
+            </article>
+          </div>
+          <div class="col-md-4 phone--container">
+            <div class="phone--position">
+              <img
+                src="img/phone-1.png"
+                class="phone--image-size"
+                alt="cellphone-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--blog container">
+        <div class="col-12 col-md-12">
+          <div class="row mb-5">
+            <div class="col-1">
+              <img src="img/blog-1.jpg" alt="blog1-image" />
+            </div>
+            <div class="col-9">
+              <div class="span-item">
+                <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
+                <span><i class="far fa-comment-alt"></i> 21 Comment</span>
+              </div>
+              <h2>Can COVID-19 be caught from a person who has no symptoms?</h2>
+            </div>
+            <div class="col-2">
+              <a href="">continue</a>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-1">
+              <img src="img/blog-2.jpg" alt="blog1-image" />
+            </div>
+            <div class="col-9">
+              <div class="span-item">
+                <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
+                <span><i class="far fa-comment-alt"></i> 21 Comment</span>
+              </div>
+              <h2>What you need to Know About Novel Coronavirus Covid 19</h2>
+            </div>
+            <div class="col-2">
+              <a href="">continue</a>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-1">
+              <img src="img/blog-3.jpg" alt="blog1-image" />
+            </div>
+            <div class="col-9">
+              <div class="span-item">
+                <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
+                <span><i class="far fa-comment-alt"></i> 21 Comment</span>
+              </div>
+              <h2>
+                What can I do to protect myself and prevent the spread of
+                disease?
+              </h2>
+            </div>
+            <div class="col-2">
+              <a href="">continue</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="row w-100">
+          <div class="partfooter col-md-4 col-sm-4 text-start">
+            <img
+              class="partfooter--img ms-4"
+              src="./img/logo.png"
+              alt="covimap-image"
+            />
+            <p class="ms-4">
+              These droplets can land on objects and surfaces around the person
+              such as tables, doorknobs and handrails
+            </p>
+            <div class="social-media ms-4">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <div class="partfooter col-md-2 col-sm-2">
+            <h4 class="text-start ms-5">Quic links</h4>
+            <a href="#" class="text-start ms-5">Prevention</a>
+            <a href="#" class="text-start ms-5">Qurantine</a>
+            <a href="#" class="text-start ms-5">About</a>
+            <a href="#" class="text-start ms-5">Help</a>
+          </div>
+          <div class="partfooter col-md-2 col-sm-2">
+            <h4 class="text-start ms-5">About</h4>
+            <a href="#" class="text-start ms-5">Hand Wash</a>
+            <a href="#" class="text-start ms-5">Social Distance</a>
+            <a href="#" class="text-start ms-5">Isolate</a>
+            <a href="#" class="text-start ms-5">Difference</a>
+          </div>
+          <div class="partfooter col-md-2 col-sm-2">
+            <h4 class="text-start ms-5">About</h4>
+            <a href="#" class="text-start ms-5">Hand Wash</a>
+            <a href="#" class="text-start ms-5">Social Distance</a>
+            <a href="#" class="text-start ms-5">Isolate</a>
+            <a href="#" class="text-start ms-5">Difference</a>
+          </div>
+          <div class="partfooter col-md-2 col-sm-2">
+            <h4 class="text-start ms-5">Help</h4>
+            <a href="#" class="text-start ms-5">Hand Wash</a>
+            <a href="#" class="text-start ms-5">Social Distance</a>
+            <a href="#" class="text-start ms-5">Isolate</a>
+            <a href="#" class="text-start ms-5">Difference</a>
+          </div>
+        </div>
+
+        <div class="row w-100">
+          <div class="row footer--copyright">
+            <div class="col-md-6">
+              <p class="text-start">&copy;Copyright 2022. All right Reserved</p>
+            </div>
+            <div class="col-md-6">
+              <p class="text-end">
+                Design by <a href="#"><span>Sara salas</span></a
+                >, <a href="#"><span>Emmanuel Estupiñan</span></a
+                >, <a href="#"><span>Carolina Loaiza</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
