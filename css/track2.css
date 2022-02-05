@@ -18,6 +18,7 @@
     }
  .main{
      display: flex;
+     background-color: #F4F5F9;
  }  
 
 .main_nav{
@@ -69,7 +70,9 @@
     font-size: 1.2rem;
 }
 .second_section{
-    margin-left: 7%;
+    margin-left: 6%;
+    background-color: #fff;
+    padding-left: 1%;
 }
 .second_section h4{
     margin-top: 5%;
@@ -89,6 +92,7 @@
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
+    align-items: center;
     z-index: 1;
   }
 .case{
@@ -96,7 +100,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all .4s ease-in-out
+    transition: all .4s ease-in-out;
+    width: 95%;
  }
  .case:hover{
     transform: scale(1.1)
@@ -118,7 +123,7 @@
     background-color: #FFF2F2;
    }
 .total_case:hover{
-    border: 2px solid #FF0100;
+    border: 1px solid #FF0100;
  }
 .total_case p{
     color: #FF0100;
@@ -127,7 +132,7 @@
     background-color: #FFF9F1;
 }
 .active_case:hover{
-    border:2px solid #FF6A07;
+    border:1px solid #FF6A07;
 }
 .active_case p{
    color: #FF6A07;
@@ -136,7 +141,7 @@
     background-color: #EDFFEC;
 }
 .recovered_case:hover{
-    border:2px solid #82C519;
+    border:1px solid #82C519;
 }
 .recovered_case p{
     color: #82C519;
@@ -145,7 +150,7 @@
     background-color: #EEFBFF;
 }
 .death_case:hover{
-    border: 2px solid #434dbb;
+    border: 1px solid #434dbb;
 }
 .death_case p{
     color: #434DBB;
@@ -175,7 +180,7 @@
     margin-bottom: 5%;
     height: 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     width:90%;
     margin-left: 5%;
   }
@@ -201,7 +206,6 @@
      font-weight: bold;
  }
  .main_body{
-    width: 68%;
     height: 100vh;
     background-color: #F4F5F9;
  }
@@ -209,7 +213,6 @@
      margin-top: 2%;
      display: flex;
      justify-content: space-between;
-     width: 100%;
      border-bottom: 2px solid #b9afc25d;
      min-height: 10%;
      margin-bottom: 0%;
@@ -233,13 +236,13 @@
   }
   .map img{
     margin-top: 5%;
-    margin-left: 2%;
+    margin-left: 4%;
   }
  .card_sect{
      margin-top: 3%;
-     margin-left: 0%;
+     margin-left: 2%;
      display: flex;
-    width: 48%;
+  
     height: 85%;
      flex-wrap: wrap;
      justify-content: space-around;
@@ -399,7 +402,14 @@
      .main{
         display: flex;
         flex-direction: column;
-        background-color: red;
+       }
+    .input{
+      display: block;
+    }
+    .main_body{
+        position: relative;
+        overflow: scroll;
+        margin-left: 15%;
        
     }
      /*
