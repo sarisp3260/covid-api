@@ -1,42 +1,109 @@
-const filterCountry = document.querySelector("#filterCountry")
+const countryFilter = document.querySelector(".filterCountry")
+/* const countryFilter = document.querySelectorAll(".boxCountry") */
 
-const getData = async(url)=> {
+
+/* const test = document.querySelectorAll('#buttonBox') */
+
+
+
+const getDataF = async(url)=>{
     let resp = await fetch(url);
-    let data = await resp.json(); 
-
+    let data = await resp.json()
     return data
 }
 
+const generateF = (flags, countries)=> {
+    let top =
+        `
+        <button class="boxCountry" id="buttonBox">
+            <img src="${flags}" alt=""> ${countries}
+        </button>
+        ` 
+       
+    return top
+  }
 
-const generatefilter = async (flags, countries)=> {
 
-    let countFilter =
+  const setFilter = async() => {
+      /* Urls */
+      let top_cases = await getDataF("https://disease.sh/v3/covid-19/countries?sort=cases")
+
+      const limite = 9;
+      /* Limites */
+      let casesLimit = top_cases.slice(0, limite)
+
+      
+      /* print Data */
+      casesLimit.forEach(topCase => {
+
+        countryFilter.innerHTML += generateF(topCase.countryInfo.flag, topCase.country)
+        
+        })
+
+  }
+  
+  setFilter()
+
+ /*  window.addEventListener('DOMContentLoaded', () => {
+
+    const setFilter = async() => {
+        /* Urls * /
+        let top_cases = await getDataF("https://disease.sh/v3/covid-19/countries?sort=cases")
+  
+        const limite = 5;
+        /* Limites * /
+        let casesLimit = top_cases.slice(0, limite)
+  
+        
+        /* print Data * /
+        casesLimit.forEach(topCase => {
+  
+          countryFilter.innerHTML += generateF(topCase.countryInfo.flag, topCase.country)
+          
+          })
+  
+    }
+    console.log('hi it works?')
+    setFilter()
+
+  }) */
+
+ /* ----------------------------------------------------------------------------- */
+
+
+ const generateCard = (numbers) =>{
+
+    let cardD =
     `
-    <div class="boxCountry">
-        <picture>
-            <img src="${flags}" alt="">
-        </picture>
-        <span>${countries}</span>
-    </div>
+    
     `
 
-    return countFilter
-}
+ }
 
-const setCountry = async () => {
+ /*test.addEventListener('click', ()=>{
 
-    let topCountries = await getData("https://disease.sh/v3/covid-19/countries?sort=cases")
-    console.log(topCountries)
+    /* console.log(test.innerText) * /
 
-    const limite = 10;
+    let textButton = test.innerText
+    console.log(textButton)
 
-    let limitCountry = topCountries.slice(0, limite)
-
-    limitCountry.forEach(fra => {
-
-        filterCountry.innerHTML += generatefilter(fra.countryInfo.flag, fra.country)
-    })
-}
-setCountry()
-
-console.log("hola")
+    /* const dataCountryF = async() => {
+        /* Urls * /
+        let dataCard = await getDataF("https://disease.sh/v3/covid-19/countries?sort=cases")
+  
+        const limite = 10;
+        /* Limites * /
+        let casesLimit = dataCard.slice(0, limite)
+  
+        
+        /* print Data * /
+        casesLimit.forEach(topCase => {
+  
+          countryFilter.innerHTML += generateF(topCase.countryInfo.flag, topCase.country)
+          
+          })
+  
+    }
+    
+    dataCountryF() * /
+ })*/

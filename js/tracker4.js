@@ -14,7 +14,7 @@ const getDataTop = async(url)=>{
 const generateTop = (flags, countries, num )=> {
     let top =
         `
-        <div class="cardTop d-flex align-items-center">
+        <div class="cardTop d-flex align-items-center mx-0">
             <picture>
                 <img src="${flags}" alt="" >
             </picture>

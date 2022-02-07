@@ -49,7 +49,7 @@
                 class="navbar-nav d-grid gap-3 mb-lg-0 col-12 d-flex justify-content-end"
               >
                 <!-- -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown d-flex flex-column align-items-end">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -75,7 +75,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Quarentine</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown d-flex flex-column align-items-end">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -103,7 +103,7 @@
                 </li>
                 <li>
                   <button class="btn btn-outline-success tracker" type="submit">
-                    <a href="traker2.html">Tracker</a>
+                    <a href="traker2.html" id="tracker">Tracker</a>
                   </button>
                 </li>
               </ul>
@@ -442,7 +442,7 @@
       <section class="col-12 col-md-12 section--get-app">
         <div class="row section--margin">
           <div class="col-md-8">
-            <article class="container">
+            <article class="container p-0">
               <h1 class="font-weight-bold">
                 Get the simple app for latest news
               </h1>
@@ -466,42 +466,42 @@
       </section>
 
       <section class="section--blog container">
-        <div class="col-12 col-md-12">
+        <div class="container col-12 col-md-12">
           <div class="row mb-5">
-            <div class="col-1">
-              <img src="img/blog-1.jpg" alt="blog1-image" />
+            <div class="col-12 col-md-2 col-lg-2">
+              <img src="img/blog-1.jpg" alt="blog1-image" class="w-30" />
             </div>
-            <div class="col-9">
+            <div class="col-12 col-md-8 col-lg-8">
               <div class="span-item">
                 <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
                 <span><i class="far fa-comment-alt"></i> 21 Comment</span>
               </div>
               <h2>Can COVID-19 be caught from a person who has no symptoms?</h2>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-lg-2">
               <a href="">continue</a>
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-1">
+            <div class="col-12 col-md-2 col-lg-2">
               <img src="img/blog-2.jpg" alt="blog1-image" />
             </div>
-            <div class="col-9">
+            <div class="col-12 col-md-8 col-lg-8">
               <div class="span-item">
                 <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
                 <span><i class="far fa-comment-alt"></i> 21 Comment</span>
               </div>
               <h2>What you need to Know About Novel Coronavirus Covid 19</h2>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-lg-2">
               <a href="">continue</a>
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-1">
+            <div class="col-12 col-md-2 col-lg-2">
               <img src="img/blog-3.jpg" alt="blog1-image" />
             </div>
-            <div class="col-9">
+            <div class="col-12 col-md-8 col-lg-8">
               <div class="span-item">
                 <span><i class="fas fa-stopwatch"></i> 9 Sept 2020</span>
                 <span><i class="far fa-comment-alt"></i> 21 Comment</span>
@@ -511,7 +511,7 @@
                 disease?
               </h2>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-lg-2">
               <a href="">continue</a>
             </div>
           </div>
@@ -519,8 +519,8 @@
       </section>
 
       <footer>
-        <div class="row w-100">
-          <div class="partfooter col-md-4 col-sm-4 text-start">
+        <div class="container d-flex gap-1 flex-wrap">
+          <div class="partfooter col-lg-3 col-md-12 col-sm-12 text-start">
             <img
               class="partfooter--img ms-4"
               src="./img/logo.png"
@@ -530,50 +530,50 @@
               These droplets can land on objects and surfaces around the person
               such as tables, doorknobs and handrails
             </p>
-            <div class="social-media ms-4">
+            <div class="social-media ms-4 mb-5">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-linkedin"></i>
               <i class="fab fa-youtube"></i>
             </div>
           </div>
-          <div class="partfooter col-md-2 col-sm-2">
-            <h4 class="text-start ms-5">Quic links</h4>
-            <a href="#" class="text-start ms-5">Prevention</a>
-            <a href="#" class="text-start ms-5">Qurantine</a>
-            <a href="#" class="text-start ms-5">About</a>
-            <a href="#" class="text-start ms-5">Help</a>
+          <div class="partfooter ms-2 col-lg-2 col-md-4 col-sm-4 col-4">
+            <h4 class="text-start">Quic links</h4>
+            <a href="#" class="text-start">Prevention</a>
+            <a href="#" class="text-start">Qurantine</a>
+            <a href="#" class="text-start">About</a>
+            <a href="#" class="text-start">Help</a>
           </div>
-          <div class="partfooter col-md-2 col-sm-2">
+          <div class="partfooter ms-2 col-lg-2 col-md-4 col-sm-4 col-4">
             <h4 class="text-start ms-5">About</h4>
-            <a href="#" class="text-start ms-5">Hand Wash</a>
-            <a href="#" class="text-start ms-5">Social Distance</a>
-            <a href="#" class="text-start ms-5">Isolate</a>
-            <a href="#" class="text-start ms-5">Difference</a>
+            <a href="#" class="text-start">Hand Wash</a>
+            <a href="#" class="text-start">Social Distance</a>
+            <a href="#" class="text-start">Isolate</a>
+            <a href="#" class="text-start">Difference</a>
           </div>
-          <div class="partfooter col-md-2 col-sm-2">
+          <div class="partfooter ms-2 col-lg-2 col-md-4 col-sm-4" id="top">
             <h4 class="text-start ms-5">About</h4>
-            <a href="#" class="text-start ms-5">Hand Wash</a>
-            <a href="#" class="text-start ms-5">Social Distance</a>
-            <a href="#" class="text-start ms-5">Isolate</a>
-            <a href="#" class="text-start ms-5">Difference</a>
+            <a href="#" class="text-start">Hand Wash</a>
+            <a href="#" class="text-start">Social Distance</a>
+            <a href="#" class="text-start">Isolate</a>
+            <a href="#" class="text-start">Difference</a>
           </div>
-          <div class="partfooter col-md-2 col-sm-2">
+          <div class="partfooter ms-2 col-lg-2 col-md-4 col-sm-4 col-4" id="top">
             <h4 class="text-start ms-5">Help</h4>
-            <a href="#" class="text-start ms-5">Hand Wash</a>
-            <a href="#" class="text-start ms-5">Social Distance</a>
-            <a href="#" class="text-start ms-5">Isolate</a>
-            <a href="#" class="text-start ms-5">Difference</a>
+            <a href="#" class="text-start">Hand Wash</a>
+            <a href="#" class="text-start">Social Distance</a>
+            <a href="#" class="text-start">Isolate</a>
+            <a href="#" class="text-start">Difference</a>
           </div>
         </div>
 
-        <div class="row w-100">
-          <div class="row footer--copyright">
-            <div class="col-md-6">
-              <p class="text-start">&copy;Copyright 2022. All right Reserved</p>
+        <div class="container ">
+          <div class="footer--copyright d-flex justify-content-between gap-1 flex-wrap">
+            <div class="col-lg-6 col-md-12 col-12">
+              <p class="text-center">&copy;Copyright 2022. All right Reserved</p>
             </div>
-            <div class="col-md-6">
-              <p class="text-end">
+            <div class="col-lg-6 col-md-12 col-12">
+              <p class="text-center">
                 Design by <a href="#"><span>Sara salas</span></a
                 >, <a href="#"><span>Emmanuel Estupiñan</span></a
                 >, <a href="#"><span>Carolina Loaiza</span></a>

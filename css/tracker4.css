@@ -17,6 +17,10 @@
     font-family: 'Poppins', sans-serif;
     /* outline: 2px solid red; */
 }
+#sizecol
+{
+    width: 8rem;
+}
 .content-title, #content-cards6
 {
     margin-top: 1.5rem;
@@ -40,7 +44,7 @@
 
 .cardTop
 {
-    width: 8.5rem;
+    width: 7.8rem;
     padding:  5px;
     background-color: var(--textlight);
     margin-bottom: 1rem;

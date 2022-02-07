@@ -17,6 +17,7 @@
     font-family: 'Poppins', sans-serif;
     /* outline: 2px solid red; */
 }
+
 #container-table
 {
     background-color: var(--textlight);
@@ -30,6 +31,7 @@
     overflow-y: scroll;
     overflow-x: scroll;
     padding: 1rem;
+
 }
 
 .titleTable
