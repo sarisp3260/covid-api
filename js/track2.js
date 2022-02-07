@@ -5,6 +5,8 @@
  const card4 = document.querySelector(".foot_card4")
  const card5 = document.querySelector(".foot_card5")
   
+ let date = new Date("february 6 2022")
+ console.log(date)
 
 fetch('https://disease.sh/v3/covid-19/countries?sort=cases')
   .then(response => response.json()) 
@@ -108,4 +110,3 @@ getCount()
 
 
 
- 
