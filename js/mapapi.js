@@ -79,27 +79,59 @@ jQuery(document).ready(function() {
                 });
                 };
   
-
+              /*Ventana modal*/
               const infoModal = result => {
-              $("#region-new-confirmed").text(`Confirmed : ${result.NewConfirmed}`);
-              $("#region-new-deaths").text(`Deaths : ${result.NewDeaths}`);
-              $("#region-new-recovered").text(`Recovered : ${result.NewRecovered}`);
-              $("#region-total-confirmed").text(
+              $("#new_confirmed").text(`Confirmed : ${result.NewConfirmed}`);
+              $("#new_deaths").text(`Deaths : ${result.NewDeaths}`);
+              $("#new_recovered").text(`Recovered : ${result.NewRecovered}`);
+              $("#total_confirmed").text(
                 `Confirmed : ${result.TotalConfirmed}`
               );
-              $("#region-total-deaths").text(`Deaths : ${result.TotalDeaths}`);
-              $("#region-total-recovered").text(
+              $("#total_deaths").text(`Deaths : ${result.TotalDeaths}`);
+              $("#total_recovered").text(
                 `Recovered : ${result.TotalRecovered}`
               );
-              };
-
-             
               
+              /*Graficos estadisticos del modal*/
 
-                 
+               const $grafica = document.querySelector("#grafica");
+              
+               const globalCases = {
+                label: ["Confirmed"],
+                data: [result.TotalConfirmed, result.TotalDeaths, result.TotalRecovered], // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+                backgroundColor: 'rgba(148, 222, 66, 0.7)', // Color de fondo
+                borderColor: 'rgba(19, 49, 14, 1)', // Color del borde
+                borderWidth: 2,// Ancho del borde
+            };
 
+            new Chart($grafica, {
+                type: 'line',// Tipo de gráfica
+                data: {
+                  labels: ["Total Confirmed", "Total Deaths", "Total Recovered"], // Informacion que se mostrara
+                  datasets: [
+                   globalCases, // Objeto que aloja los datos que se mostraran en la grafica
+                        // Aquí se pueden poner más datos...
+                    ]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                    },
+                }
+            });
+            cerra.addEventListener('click',e=>{
+              e.preventDefault()
+              let back=document.getElementById("alert-modal")
                 
-                
+                 back.style.display="none"
+                 })
+              
+              };
+              
                     },
 
         onRegionOver: function(element, code, region)
@@ -113,7 +145,6 @@ jQuery(document).ready(function() {
         }
     });
 });
-
 
 	
 	

@@ -248,8 +248,11 @@
      font-size: 0.9rem;
  }
  .update{
-     margin-left: 60%;
- }
+       width: 30%;
+       font-weight: 600;
+       display: flex;
+       justify-content: flex-end;
+  }
 /*seccion cards intermedias y mapa------------------------------------------------------------------------------*/
 
  .sect_map{
