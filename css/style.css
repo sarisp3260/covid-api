@@ -84,6 +84,13 @@ header
     border-radius: 50px;
     width: 22vh;
     background-color: var(--blue);
+}
+.tracker:hover
+{
+    background-color: var(--oxfordblue);
+}
+#tracker
+{
     color: var(--textlight )!important ;
 }
 
@@ -367,12 +374,16 @@ header
     }
     #navbarSupportedContent
     {
-        padding: 1rem 0;
+        padding: .8rem 0;
     }
  /*    #navbarSupportedContent::after
     {
         font-size: 2rem !important;
     } */
+    .navbar
+    {
+        padding: 1rem 0;
+    }
 }
 @media (max-width: 760px){
     #row-box:nth-of-type(1) {
