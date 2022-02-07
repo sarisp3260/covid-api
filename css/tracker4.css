@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+:root
+{
+    --blue: #3639AE;
+    --bluedarker: #171133;
+    --oxfordblue: #1B2A4E;
+    --navyblue: #1E0F9F;
+    --bluelight: #08B8E3;
+    --mediumblue: #293f73;
+    --textdark: #6F6B8C;
+    --textlight: #fff;
+    --grey: #c5c5c5;
+}
+*
+{
+    font-family: 'Poppins', sans-serif;
+    /* outline: 2px solid red; */
+}
+.content-title, #content-cards6
+{
+    margin-top: 1.5rem;
+}
+.content-title
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid var(--grey);
+}
+#titleTop
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.topCases, .todayCases, .topDeaths, .todayDeaths, .topActive, .topRecover
+{
+    padding:  5px;
+}
+
+.cardTop
+{
+    width: 8.5rem;
+    padding:  5px;
+    background-color: var(--textlight);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.cardTop picture
+{
+    padding-left: .2rem;
+}
+.cardTop img
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.cardTop span
+{
+    font-size: .8rem;
+}
+.cardTop h2
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
