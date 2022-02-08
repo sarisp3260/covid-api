@@ -4,7 +4,6 @@ jQuery(document).ready(function() {
         color: '#ffffff',
         hoverOpacity: 0.7,
         selectedColor: '#666666',
-        enableZoom: true,
         showTooltip: true,
         values: sample_data,
         scaleColors: ['#3639AE', '#C4C5ED'],

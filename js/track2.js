@@ -70,7 +70,7 @@ fetch('https://disease.sh/v3/covid-19/countries?sort=cases')
   
  
  /*Consumo de api y renderizado de casos a nivel mundial*/
-  const getData = async()=>{
+  const getDataOne = async()=>{
   const resp = await fetch("https://disease.sh/v3/covid-19/all")
   const data = await resp.json()
   
@@ -88,7 +88,7 @@ fetch('https://disease.sh/v3/covid-19/countries?sort=cases')
         
 }
 
-getData()
+getDataOne()
 
 /*Funcion que muestra los datos del pais que se encuentra en el select al momento de cargar la pagina*/
 const getCounCountry = async()=>{
@@ -114,10 +114,10 @@ const getCount = async()=>{
   
   data.map(dat => {
     
-      select.innerHTML += `<option> ${dat.country}</option>
-                          `
+      select.innerHTML += `<option> ${dat.country}</option>`
 
 });
+
 
 /*Evento  change que identifica el pais seleccionado*/      
    select.addEventListener("change", ()=>{

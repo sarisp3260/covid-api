@@ -423,79 +423,157 @@
     font-weight: 600;
     } 
 
- @media screen and (min-width: 320px) and (max-width: 1024px){
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        .second_section {
+            display: none;
+         }
+         .main_nav{
+             width: 15%;
+         }
+         .main{
+            display: flex;
+            flex-direction: column;
+           }
+           .input{
+            display: flex;
+            flex-wrap: wrap;
+           }
+          .update{
+              width: 50%;
+          }
+          #form{
+              width: 40%;
+          }
+        .main_body{
+            margin-left: 15%;
+            width: 84%;
+        }
+        .card_sect{
+            height: 100%;
+            margin-top: 0%;
+        }
+        .card_sect .card{
+            height: 25%;
+        }
+        #telephone{
+            display: none;
+        }
+        .footer_card{
+            justify-content: space-between;
+        }
+
+        }
+        @media screen and (min-width: 768px) and (max-width: 900px){
+            .input{
+                display: flex;
+                flex-wrap: wrap;
+               }
+              .update{
+                  width: 50%;
+              }
+              #form{
+                  width: 40%;
+              }
+              .main_body {
+                position: relative;
+                overflow: scroll;
+                margin-left: 10%;
+                width: 85%;
+            }
+            .card_sect{
+                width: 96%;
+                height: 50%;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 1%;
+                }
+            .card_sect .card{
+                width: 30%;
+                height: 40%;
+             }
+            .main_nav{
+                width: 12%;
+            }
+            .main{
+              display: flex;
+              flex-direction: column;
+             }
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px){
+                .input{
+                    display: block;
+                    width: 90%;
+                    margin: auto;
+                  }
+                  .update{
+                     padding-right: 18%;
+                      width: 100%;
+                  }
+                  #form{
+                      width: 100%;
+                  }
+                  .card_sect{
+                      font-size: 1.2rem;
+                      
+                  }
+                  .main_body {
+                    position: relative;
+                    overflow: scroll;
+                    margin-left: 14%;
+                    width: 83%;
+                }
+                .card_sect{
+                    width: 96%;
+                    height: 50%;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 1%;
+                    }
+                  .card_sect .card{
+                       width: 45%;
+                       height: 30%;
+                    }
+                    .main_nav{
+                        width: 14%;
+                     }
+                     .main{
+                        display: flex;
+                        flex-direction: column;
+                     }
+                }   
+            
+ @media screen and (min-width: 320px) and (max-width: 768px){
     .second_section {
         display: none;
      }
-     .main_nav{
-         background-color: blue;
-         width: 15%;
+    .second_section {
+        display: none;
      }
-     .main{
+     .sect_map{
         display: flex;
         flex-direction: column;
-       }
-    .input{
-      display: block;
-    }
-    .main_body{
-        position: relative;
-        overflow: scroll;
-        margin-left: 15%;
-       
-    }
-     /*
-    body{
-       min-width: 220%; 
-       max-width: 450px;
-       max-height: 900px;
-    }
-    .main{
-        background-color: red;
-        max-width: 450px;
-        min-width: 450px;
-        max-height: 900px;
-    }
-    .main_nav{
-        min-height: 180vh;
-        position: absolute;
-        z-index: 1;
-       }
-    .main_body{
-        width: 80%;
-        position: relative;
-        overflow: scroll;
-        margin-left: 15%;
-        z-index: 0;
-    }
+        height: 80%;
+     }
   
-    .picture img{
-        width: 80px;
-    }
-    .menu li i{
-        font-size: 2rem;
-    }
-    .sect_map{
+    .map{
+        width: 96%;
         display: block;
+        margin: auto;
+        height: 50%;
     }
-    .input{
-        display: block;
-    }
-    .card_sect{
-      background-color: red;
-      width: 100%;
-      justify-content: space-around;
-      }
     .footer_card{
-        margin-top: 70%;
-     
-   }
-   */
+        margin-top: 5%;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .maincard{
+         width: 50%;
+     }
  }
 
- @media screen and (min-width: 1024px) and (max-width: 1300px){
-  
-     }
+ 
 
 
 
