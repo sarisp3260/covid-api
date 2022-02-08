@@ -86,3 +86,52 @@ const generateTop = (flags, countries, num )=> {
   }
   
   setTop()
+
+ /* --------------------------------Sidebar print data Api------------------------------------------------------ */
+
+  const countries = document.querySelector(".main_country")
+
+  /*Consumo de api y renderizado top 10 country con banderas*/
+fetch('https://disease.sh/v3/covid-19/countries?sort=cases')
+.then(response => response.json()) 
+.then(data => { 
+     console.log(data)
+     /*Muestra solo 10 elementos*/
+  const limit = 10;
+  let datas = data.slice(0, limit)
+   /*Recorre el array y extrae las propiedades que se mostraran*/
+     datas.map(dat => {
+          
+          countries.innerHTML += `<div class="first_div">
+                                    <div class="second_div">
+                                        <img src="${dat.countryInfo.flag}">
+                                        <p class="name">${dat.country}</p>
+                                    </div>
+                                    <p class="cases">${dat.cases}</p>
+                                  </div>
+                                `
+           
+          
+      }); 
+});
+
+const total = document.querySelector(".total_case")
+ const active = document.querySelector(".active_case")
+ const recovered = document.querySelector(".recovered_case")
+ const death = document.querySelector(".death_case")
+ /*Consumo de api y renderizado de casos a nivel mundial*/
+ const getData = async()=>{
+    const resp = await fetch("https://disease.sh/v3/covid-19/all")
+    const data = await resp.json()
+    
+        /*Al ser un objeto no es becesario recorrerlo, se accede directamente a cada propiedad*/
+        /*Seccion primera superior*/
+      total.innerHTML=` <h6>Total Case</h6><p>${data.cases}</p>`
+      active.innerHTML=` <h6>Active Case</h6><p>${data.active}</p>`
+      recovered.innerHTML=` <h6>Recovered Case</h6><p>${data.recovered}</p>`
+      death.innerHTML=` <h6>Deaths Case</h6><p>${data.deaths}</p>`
+          
+  }
+
+  
+getData()
