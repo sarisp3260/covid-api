@@ -348,7 +348,7 @@ JQVMap.maps = {};
       map: 'world_en',
       backgroundColor: '#ffffff',
       color: '#f4f3f0',
-      hoverColor: '#7B6FFF',
+      hoverColor: '#230731',
       hoverColors: {},
       selectedColor: '#c9dfaf',
       scaleColors: ['#3639AE', '#3639AE'],
