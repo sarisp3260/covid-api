@@ -578,8 +578,7 @@
  @media screen and (min-width: 1600px) and (max-width: 2560px){
      .top_10{
          margin-top: 10%;
-         background-color: red;
-     }
+         }
 
  }
  
