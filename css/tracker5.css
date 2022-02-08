@@ -285,6 +285,10 @@
 }
 
 /* top 10 paises filtro */
+.list-group-item
+{
+  border: none;
+}
 .boxCountry {
   display: flex;
   justify-content: space-between;
@@ -308,7 +312,7 @@
 /* cartas contenido */
 
 .cardContent {
-  width: 14rem;
+  width: 14.3rem;
   border-radius: 5px;
   border: none;
   /* animation */
