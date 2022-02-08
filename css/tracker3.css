@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+:root
+{
+    --blue: #3639AE;
+    --bluedarker: #171133;
+    --oxfordblue: #1B2A4E;
+    --navyblue: #1E0F9F;
+    --bluelight: #08B8E3;
+    --mediumblue: #293f73;
+    --textdark: #6F6B8C;
+    --textlight: #fff;
+    --grey: #c5c5c5;
+}
+*
+{
+    font-family: 'Poppins', sans-serif;
+    /* outline: 2px solid red; */
+}
+
+#container-table
+{
+    background-color: var(--textlight);
+    margin: 1rem;
+    padding: .5rem 2rem;
+   /*  overflow-y: scroll;
+    overflow-x: scroll; */
+}
+.scrollTable
+{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 1rem;
+
+}
+
+.titleTable
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--oxfordblue);
+}
+
+#borderTitle
+{
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: .5rem;
+}
+.showSearch
+{
+    padding: 1rem 0;
+}
+
+.dataShow
+{
+    text-align: center;
+    border: 1px solid var(--grey);
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+}
+
+.inputSearch
+{
+    border: 1px solid var(--grey);
+    width: 22vh;
+    padding: .5rem;
+}
+
+/* -------------------Tabla-------------------- */
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #F8F9FE !important; 
+   box-shadow: none;
+ }
+
+/* .table tbody tr:hover
+{
+    background-color: #EBEBF7; 
+} */
+
+.names
+{
+    color: var(--oxfordblue);
+}
+
+#pageBox
+{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+#pageBox:hover
+{
+    background-color: var(--blue);
+    color: var(--textlight);
+}
