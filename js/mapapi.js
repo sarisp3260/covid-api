@@ -16,7 +16,7 @@ jQuery(document).ready(function() {
              .then(res => res.json()) 
              .then(data => { 
                 // console.log(data)
-                 getData(data);
+                 getDataTwo(data);
                  upDate = true;
                  includeData();
              
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
          
      
 
-              const getData = data => {
+              const getDataTwo = data => {
               /*trae todos los paises y los guarda en una variable*/
               allCountries = data.Countries;
               /*Recorre el array y extrae por cada pais los datos requeridos*/
