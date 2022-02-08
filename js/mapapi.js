@@ -122,13 +122,7 @@ jQuery(document).ready(function() {
                     },
                 }
             });
-            cerra.addEventListener('click',e=>{
-              e.preventDefault()
-              let back=document.getElementById("alert-modal")
-                
-                 back.style.display="none"
-                 })
-              
+                     
               };
               
                     },
